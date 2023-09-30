@@ -5,7 +5,7 @@ import './App.css';
 // API : https://swapi.dev/api/films
 
 function App() {
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState();
 
   const getMovies = async (word) => {
     const res = await fetch('https://swapi.dev/api/films');
